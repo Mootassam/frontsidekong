@@ -135,6 +135,7 @@ function UserEditForm(props) {
           <Row
             style={{
               paddingBottom: '10px',
+            display:'grid'
             }}
           >
             <Col sm={4}>
@@ -190,96 +191,13 @@ function UserEditForm(props) {
                 required={true}
               />
             </Col>
-            <Col sm={4}>
-              <InputNumberFormItem
-                name="phoneNumber"
-                label={i18n('user.fields.phoneNumber')}
-              />
-            </Col>
-            <Col sm={4}>
-              <InputFormItem
-                name="adresse"
-                label={i18n('user.fields.address')}
-              />
-            </Col>
-          </Row>
-          <Row
-            style={{
-              paddingBottom: '10px',
-            }}
-          >
-            <Col sm={4}>
-              <SelectFormItem
-                name="secteur"
-                label={i18n('user.fields.sector')}
-                options={userSecteur.secteur.map(
-                  (value) => ({
-                    value,
-                    label: i18n(`user.sector.${value}`),
-                  }),
-                )}
-              />
-            </Col>
-            <Col sm={4}>
-              <InputFormItem
-                name="employeur"
-                label={i18n('user.fields.employer')}
-              />
-            </Col>
-            <Col sm={4}>
-              <InputFormItem
-                name="profession"
-                label={i18n('user.fields.profession')}
-              />
-            </Col>
+  
+    
           </Row>
 
-          <Row>
-            <Col sm={4}>
-              <DatePickerFormItem
-                name="date_naissance"
-                label={i18n('user.fields.birthDate')}
-              />
-            </Col>
-            <Col sm={4}>
-              <SelectFormItem
-                name="etat_civil"
-                label={i18n('user.fields.maritalStatus')}
-                options={userEtat.Etat.map((value) => ({
-                  value,
-                  label: i18n(
-                    `user.maritalStatus.${value}`,
-                  ),
-                }))}
-              />
-            </Col>
-            <Col sm={4}>
-              <InputNumberFormItem
-                name="cin"
-                label={i18n('C.I.N')}
-              />
-            </Col>
-          </Row>
-          <Row
-            style={{
-              paddingBottom: '10px',
-            }}
-          >
-            <Col sm={4}>
-              <InputFormItem
-                name="lien_facebook"
-                label={i18n('user.fields.facebookLink')}
-              />
-            </Col>
-            <Col sm={4}>
-              <UserAdherantAutocompleteFormItem
-                name="parrain"
-                label={i18n('user.fields.sponsor')}
-                showCreate={!props.modal}
-              />
-            </Col>
-            <Col sm={4}></Col>
-          </Row>
+
+
+   
           <div className="form-buttons">
             <button
               className="btn btn-primary"
