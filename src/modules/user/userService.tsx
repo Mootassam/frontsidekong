@@ -6,9 +6,7 @@ export default class UserService {
     const body = {
       data,
     };
-
     const tenantId = AuthCurrentTenant.get();
-
     const response = await authAxios.put(
       `/tenant/${tenantId}/user`,
       body,
