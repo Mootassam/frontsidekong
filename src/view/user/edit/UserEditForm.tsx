@@ -169,9 +169,10 @@ function UserEditForm(props) {
               />
             </Col>
             <Col sm={4}>
-              <SelectFormItem
+            <SelectFormItem
                 name="status"
                 label={i18n('user.fields.status')}
+
                 options={userEnumerators.status.map(
                   (value) => ({
                     value,
