@@ -27,7 +27,7 @@ const languages: {
   },
   fr: {
     id: 'fr',
-    label: 'Français',
+    label: '中国人',
     flag: '/images/flags/France.png',
     dateFns: null,
     dictionary: null,

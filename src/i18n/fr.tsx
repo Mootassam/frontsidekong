@@ -23,6 +23,8 @@ const fr = {
     select: '选择',
     continue: '继续',
     configurations: '配置',
+    filters: '过滤器',
+
   },
 
   app: {
@@ -129,6 +131,7 @@ const fr = {
       createdAt: '创建于',
       updatedAt: '更新时间',
       roleUser: '角色/用户',
+      phoneNumber:"电话号码",
       roles: '角色',
       createdAtRange: '创建于',
       password: '密码',
@@ -288,21 +291,21 @@ const fr = {
   },
 
   auditLog: {
-    menu: 'Journaux daudit',
-    title: 'Journaux daudit',
+    menu: '审计日志',
+    title: '审计日志',
     exporterFileName: 'audit_log_export',
     entityNamesHint:
-      'Séparez plusieurs entités à laide du caractère virgule.',
+      '使用逗号分隔多个实体。',
     fields: {
-      id: 'Id',
-      timestampRange: 'Période',
-      entityName: 'Entité',
-      entityNames: 'Entités',
-      entityId: 'Entités ID',
-      action: 'Action',
-      values: 'Values',
-      timestamp: 'Date',
-      createdByEmail: 'Courriel de lutilisateur',
+      id: '编号',
+      timestampRange: '期间',
+      entityName: '实体',
+      entityNames: '实体',
+      entityId: '实体ID',
+      action: '行动',
+      values: '价值观',
+      timestamp: '日期',
+      createdByEmail: '用户邮箱',
     },
   },
   settings: {
@@ -334,7 +337,7 @@ const fr = {
     },
   },
   dashboard: {
-    menu: 'Dashboard',
+    menu: '用户',
     message: `This page uses fake data for demonstration purposes only. You can edit it at frontend/view/dashboard/DashboardPage.ts.`,
     charts: {
       day: 'Day',

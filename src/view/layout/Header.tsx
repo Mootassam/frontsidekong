@@ -119,14 +119,14 @@ function Header(props) {
               </button>
             )}
 
-            <button
+            {/* <button
               onClick={doNavigateToSettings}
               className="dropdown-item"
               type="button"
             >
               <i className="fas fa-wrench" />
               {i18n('settings.menu')}
-            </button>
+            </button> */}
 
             <button
               onClick={doNavigateToAuditLog}

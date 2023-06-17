@@ -1,7 +1,7 @@
 import Roles from 'src/security/roles';
 
 const userEnumerators = {
-  status: ['active', 'invited', 'empty-permissions'],
+  status: ['active','empty-permissions'],
   genre: ['male', 'female'],
   roles: Object.keys(Roles.values),
 };

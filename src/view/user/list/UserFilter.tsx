@@ -160,7 +160,7 @@ function UserFilter(props) {
                     )}
                   />
                 </div>
-                <div className="col-lg-6 col-12">
+                {/* <div className="col-lg-6 col-12">
                   <SelectFormItem
                     name={'role'}
                     label={i18n('user.fields.role')}
@@ -171,7 +171,7 @@ function UserFilter(props) {
                       }),
                     )}
                   />
-                </div>
+                </div> */}
               </div>
 
               <div className="row">
