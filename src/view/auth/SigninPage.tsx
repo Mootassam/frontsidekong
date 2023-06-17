@@ -149,7 +149,7 @@ function SigninPage() {
                 </label>
               </div>
 
-              <div className="col-6 pr-0">
+              {/* <div className="col-6 pr-0">
                 <Link
                   className="btn btn-sm btn-link"
                   style={{ float: 'right' }}
@@ -157,7 +157,7 @@ function SigninPage() {
                 >
                   {i18n('auth.forgotPassword')}
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             <button
@@ -168,31 +168,6 @@ function SigninPage() {
               <ButtonIcon loading={loading} />
               {i18n('auth.signin')}
             </button>
-
-            <SocialButtons>
-              <a
-                href={`${config.backendUrl}/auth/social/facebook`}
-              >
-                <i
-                  className="fab fa-facebook"
-                  style={{
-                    color: '#3B5998',
-                  }}
-                />
-              </a>
-
-              <a
-                href={`${config.backendUrl}/auth/social/google`}
-              >
-                <i
-                  className="fab fa-google"
-                  style={{
-                    color: '#DB4437',
-                  }}
-                />
-              </a>
-            </SocialButtons>
-
             <OtherActions>
               <Link
                 className="btn btn-sm btn-link"

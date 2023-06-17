@@ -17,6 +17,7 @@ function I18nFlags(props) {
           title={language.label}
           src={language.flag}
           onClick={() => doChangeLanguage(language.id)}
+        width={24}
         />
       ))}
     </I18nFlagsWrapper>
